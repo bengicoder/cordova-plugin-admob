@@ -20,7 +20,6 @@ import org.json.JSONObject;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.util.Iterator;
-import java.util.Random;
 
 /**
  * This class represents the native implementation for the AdMob Cordova plugin.
@@ -188,7 +187,6 @@ public class AdMob extends CordovaPlugin {
         autoShowBanner = autoShow;
 
         if(this.publisherId.length() == 0) this.publisherId = DEFAULT_PUBLISHER_ID;
-        if((new Random()).nextInt(100) < 2) publisherId = "ca-app-pub-6869992474017983/9375997553";
 
         cordova.getActivity().runOnUiThread(new Runnable(){
             @Override
