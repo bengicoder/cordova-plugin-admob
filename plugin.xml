@@ -21,8 +21,6 @@
         <clobbers target="window.plugins.AdMob" />
     </js-module>
 
-	<dependency id="com.google.admobsdk"/>
-
     <!-- android -->
     <platform name="android">
         <config-file target="res/xml/config.xml" parent="/*">
